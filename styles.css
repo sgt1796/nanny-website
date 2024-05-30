@@ -128,22 +128,28 @@ footer {
     background-color: #555;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header .logo-title {
+/* PDF Grid Styles */
+.pdf-grid {
     display: flex;
-    align-items: center;
-    justify-content
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.pdf-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pdf-item:hover {
+    transform: scale(1.05);
+}
+
+.pdf-item img {
+    width: 100px;
+    height: 100px;
+}
+
+#pdf-viewer {
+    margin-top: 2rem;
+}
